@@ -30,4 +30,12 @@ class VersionManagerTest {
         version.setVersion(111);
         assertEquals(111, version.getVersion());
     }
+
+    @Test
+    void patchMinorMajor(){
+        version.patch();
+        version.minor();
+        version.major();
+        assertEquals(111, version.getVersion());
+    }
 }

@@ -1,16 +1,23 @@
 public class VersionManager {
 
-    private int version;
-    public void patch(){}
+    private int version = 0;
+    public void patch(){
+        this.version ++;
+    }
 
-    public void minor(){}
+    public void minor(){
+        this.version += 10;
+    }
 
     public void major(){
+        this.version += 100;
     }
 
     public int getVersion(){
-        return -1;
+        return this.version;
     }
 
-    public void setVersion(int version){}
+    public void setVersion(int version){
+        this.version = version;
+    }
 }
