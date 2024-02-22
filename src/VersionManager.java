@@ -22,5 +22,6 @@ public class VersionManager {
     }
 
     public void reset(){
+        this.version = 0;
     }
 }
