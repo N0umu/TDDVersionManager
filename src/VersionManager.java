@@ -20,4 +20,7 @@ public class VersionManager {
     public void setVersion(int version){
         this.version = version;
     }
+
+    public void reset(){
+    }
 }

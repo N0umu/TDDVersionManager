@@ -38,4 +38,12 @@ class VersionManagerTest {
         version.major();
         assertEquals(111, version.getVersion());
     }
+
+    @Test
+    void reset(){
+        version.setVersion(111);
+        assertEquals(111, version.getVersion());
+        version.reset();
+        assertEquals(0, version.getVersion());
+    }
 }
